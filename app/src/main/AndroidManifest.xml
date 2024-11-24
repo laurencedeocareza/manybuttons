@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Manybuttons"
         tools:targetApi="31">
         <activity
+            android:name=".pickers"
+            android:exported="false" />
+        <activity
+            android:name=".dialogs"
+            android:exported="false" />
+        <activity
             android:name=".PopupActivity"
             android:exported="false" />
         <activity

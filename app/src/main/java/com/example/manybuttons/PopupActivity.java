@@ -6,6 +6,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -17,15 +18,15 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class PopupActivity extends AppCompatActivity {
 
-    Button buttonpop;
+    ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.popup);
 
-        buttonpop = findViewById(R.id.buttonpop);
-        registerForContextMenu(buttonpop);
+        imageView = findViewById(R.id.buttonpop);
+        registerForContextMenu(imageView);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -43,18 +44,19 @@ public class PopupActivity extends AppCompatActivity {
 
     @Override
     public boolean onContextItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == R.id.share) {
+        if (item.getItemId() == R.id.popshare) {
             Toast.makeText(this, "Share pressed", Toast.LENGTH_SHORT).show();
             return true;
         }
         else if (item.getItemId() == R.id.friends) {
-            Toast.makeText(this, "Share pressed", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Share with friends", Toast.LENGTH_SHORT).show();
             return true;
         }
-        else if (item.getItemId() == R.id.flag) {
-            Toast.makeText(this, "Share pressed", Toast.LENGTH_SHORT).show();
+        else if (item.getItemId() == R.id.report) {
+            Toast.makeText(this, "Report the content", Toast.LENGTH_SHORT).show();
             return true;
         }
+
         return super.onContextItemSelected(item);
     }
 }

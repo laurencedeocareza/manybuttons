@@ -52,6 +52,12 @@ public class appbar extends AppCompatActivity {
         } else if  (item.getItemId() == R.id.setting){
             Toast.makeText(this, "Setting selected", Toast.LENGTH_SHORT).show();
             return true;
+        } else if  (item.getItemId() == R.id.search){
+            Toast.makeText(this, "search selected", Toast.LENGTH_SHORT).show();
+            return true;
+        } else if  (item.getItemId() == R.id.logout){
+            Toast.makeText(this, "logout selected", Toast.LENGTH_SHORT).show();
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }

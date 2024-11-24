@@ -31,4 +31,18 @@ public class MainActivity extends AppCompatActivity {
     public void opencontextualmenu(View view) {
         startActivity(new Intent(this,contextualmenu.class));
     }
+
+    public void openpopup(View view) {
+
+        startActivity(new Intent(this, PopupActivity.class));
+    }
+
+    public void opendialogs(View view) {
+
+        startActivity(new Intent(this, dialogs.class));
+    }
+
+    public void openpickers(View view) {
+        startActivity(new Intent(this, pickers.class));
+    }
 }

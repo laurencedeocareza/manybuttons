@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/contextheart"
+        android:icon="@drawable/heart"
+        android:title="heart"/>
+    <item
+        android:id="@+id/contextshare"
+        android:icon="@drawable/share"
+        android:title="share"/>
+    <item
+        android:id="@+id/contextreport"
+        android:icon="@drawable/report"
+        android:title="report"/>
+
+</menu>

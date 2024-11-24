@@ -5,12 +5,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Button
-        android:id="@+id/buttonlong"
+        android:id="@+id/buttonaction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Long Click"
+        android:text="Long Click(action mode)k"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/buttonfloat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Long Click(Floating)k"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/buttonaction"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

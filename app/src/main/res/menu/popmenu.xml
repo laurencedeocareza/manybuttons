@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="share"
+        android:icon="@drawable/share"
+        android:title="Share"/>
+    <item
+        android:id="report"
+        android:icon="@drawable/flag"
+        android:title="Report"/>
+    <item
+        android:id="friends"
+        android:icon="@drawable/friends"
+        android:title="Share to friends"/>
+</menu>
